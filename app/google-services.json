@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "897204789775",
+    "project_id": "smartapp-1ff17",
+    "storage_bucket": "smartapp-1ff17.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:897204789775:android:2ef966bc85afdc52b6397a",
+        "android_client_info": {
+          "package_name": "com.example.smartapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBs3UU05XntHk1HqK3jCIpt_7i9tW2vf-8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
