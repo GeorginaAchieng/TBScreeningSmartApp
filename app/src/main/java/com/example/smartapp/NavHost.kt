@@ -8,17 +8,19 @@ import com.example.smartapp.screens.FeedBack
 import com.example.smartapp.screens.LoginScreen
 import com.example.smartapp.screens.RegistrationScreen
 import com.example.smartapp.screens.ScreeningQuestions
+import com.example.smartapp.screens.WelcomeScreen
 
 @Composable
 fun MyApp() {
     val navController = rememberNavController()
 
-    NavHost(navController = navController, startDestination = "login") {
+    NavHost(navController = navController, startDestination = "welcome") {
         // add all destinations here
         composable(route = "login") { LoginScreen(navController) } // login destination
         composable(route = "registration") { RegistrationScreen (navController) } // registration destination
         composable(route = "homepage") { ScreeningQuestions (navController) } // screening questions destination
         composable(route = "feedBack") { FeedBack (navController) } // Feedback destination
+        composable(route = "welcome") { WelcomeScreen (navController) } // Feedback destination
 
     }
 

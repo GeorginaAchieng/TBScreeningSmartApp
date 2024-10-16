@@ -1,11 +1,13 @@
 package com.example.smartapp.screens
 
+
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Button
 import androidx.compose.material3.Checkbox
 import androidx.compose.material3.Text
@@ -30,11 +32,18 @@ fun ScreeningQuestions(navController: NavController) {
     }
     Column(modifier = Modifier
         .fillMaxHeight()
-        .padding(40.dp)) {
+        .padding(40.dp))
+
+    {
+
 
         Image(
+            modifier = Modifier
+                .fillMaxWidth()
+                .size(480.dp),
             painter = painterResource(id = R.drawable.logo),
             contentDescription = stringResource(id = R.string.tb_logo)
+
         )
 
     Row(modifier = Modifier
