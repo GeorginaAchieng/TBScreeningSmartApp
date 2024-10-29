@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -45,9 +46,9 @@ fun FeedBack(navController: NavController) {
             .size(width = 300.dp, height = 200.dp)
             .padding(16.dp),
     ) {
-        Column() {
+        Column {
 
-            Text(text = "TB Presumed, \n Visit the nearest Health Center",
+            Text(text = "If you checked all the symptoms or select a few\nTB Presumed, \n Visit the nearest Health Center",
                 color = Color.Red,
                 modifier = paddingModifier,
                 fontSize = 24.sp,
@@ -64,17 +65,24 @@ fun FeedBack(navController: NavController) {
             .size(width = 300.dp, height = 200.dp)
             .padding(16.dp),
         ) {
-            Column() {
+            Column {
 
-                Text(text = "No TB",
+                Text(text = "If you do not have any of these symptoms\nNo TB",
                     color = Color.DarkGray,
                     modifier = paddingModifier,
-                    fontSize = 34.sp,
+                    fontSize = 28.sp,
                     fontWeight = FontWeight.Bold,
 
                 )
 
             }
 
+
+        }
+        Spacer(modifier = Modifier.height(22.dp))
+        Button(onClick = {
+            navController.navigate("Welcome")
+        }) {
+            Text("Logout")
         }
 }}
